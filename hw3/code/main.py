@@ -46,13 +46,13 @@ def compute_h_norm(p1, p2):
     N1, N2 = p1.shape[0], p2.shape[0]
     p1_norm, p2_norm = np.zeros(p1.shape), np.zeros(p2.shape)  # data type can be float!
 
-    # Reference: https://core.ac.uk/download/pdf/132551944.pdf (Check the writeup.pdf)
+    # Reference: https://core.ac.uk/download/pdf/132551944.pdf (Check writeup.pdf)
     # 1. Translation: bring the centroid of the set of points to the origin of coordinates
     # centroid
     p1_bar = np.mean(p1, axis=0)  # [x_bar, y_bar]
     p2_bar = np.mean(p2, axis=0)
 
-    # 2. Scaling: make the average distance from a point to the origin root(2)
+    # 2. Scaling: make the average distance from a point to the origin sqrt(2)
     # initial average distance from every point to the origin of coordinates
     d1_bar = np.linalg.norm(p1 - p1_bar, axis=1).sum() / N1
     d2_bar = np.linalg.norm(p2 - p2_bar, axis=1).sum() / N2
@@ -192,7 +192,7 @@ def set_cor_rec():
     """
     c_in = np.array([[1060, 160], [1403, 123], [1048, 869],
                      [1400, 888]])  # upper left, upper right, lower left, lower right, shadow left, shadow right
-    c_ref = np.array([[1054, 133], [1399, 135], [1046, 869], [1397, 864]])
+    c_ref = np.array([[1054, 133], [1400, 133], [1054, 842], [1400, 842]])
 
     return c_in, c_ref
 
