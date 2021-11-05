@@ -99,7 +99,7 @@ def gaussian_filter(input_image, size, sigmax, sigmay):
     pad_r, pad_c = filter_height // 2, filter_width // 2
 
     gaussian_1d_x = np.fromfunction(lambda x: 1 / (np.sqrt(2*np.pi) * sigmax) * np.exp(-x**2 / (2*sigmax**2)), (size[1],))
-    gaussian_1d_y = np.fromfunction(lambda x: 1 / (np.sqrt(2*np.pi) * sigmay) * np.exp(-x**2 / (2*sigmay**2)), (size[0],))  # using math module creates errors
+    gaussian_1d_y = np.fromfunction(lambda y: 1 / (np.sqrt(2*np.pi) * sigmay) * np.exp(-y**2 / (2*sigmay**2)), (size[0],))  # using math module creates errors
     x_norm, y_norm = np.sum(gaussian_1d_x), np.sum(gaussian_1d_y)
     gaussian_1d_x, gaussian_1d_y = gaussian_1d_x / x_norm, gaussian_1d_y / y_norm  # normalize the kernel to maintain adequate intensity
     # reference: https://stackoverflow.com/questions/61354389/when-applying-gaussian-filter-the-image-becomes-dark
