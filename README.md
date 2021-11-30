@@ -41,3 +41,15 @@ This is a repository of my assignment submissions and project materials for [M15
   * Similar to the `warp_image` function
 
 *Detailed code explanation and result images are attached to `writeup.pdf`*
+
+### hw4
+* Epipolar geometry
+* Optical flow
+* Dominant motion estimation using Lucas-Kanade method
+  * Warp image using the affine transformation matrix
+  * Normalize the warped image gradients ∇I for calculation stability
+* Moving object detection using affine motion subtraction
+  * Iteratively update `p`, the optimal parameters to derive minimum SSD, until the search window moves by less than `epsilon`
+  * Use double hysteresis thresholding to identify locations where the absolute difference of pixels in the template and the warped image domain exceeds the lower threshold and is below the upper threshold
+
+*Detailed code explanation is attached to `writeup.pdf`*
