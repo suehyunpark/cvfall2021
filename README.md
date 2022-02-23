@@ -3,7 +3,12 @@
 This is a repository of my assignment submissions and project materials for [M1522.001000 Computer Vision](https://sugang.snu.ac.kr/sugang/cc/cc103.action?openSchyy=2021&openShtmFg=U000200002&openDetaShtmFg=U000300001&sbjtCd=M1522.001000&ltNo=001&sbjtSubhCd=000&lang_knd=ko) (Fall 2021 class, Seoul National University)
 *Note: All of my solutions were uploaded well after the deadline of each assignment.*
 
-### hw1
+## Project
+### Visual Detection of Guitar Fretboard and Subsequent Finger Position Overlay By Augmenting Computer Vision Methodologies with Deep Learning
+[Presentation slides](https://docs.google.com/presentation/d/1MarnvmWeA-f02vdsuZ9UmuCXFUcQdFh4l6AqUcq_0WE/edit?usp=sharing)
+
+
+## hw1
 * Convolution using reflect padding
 * Median and Gaussian filter
 * Gaussian and Laplacian pyramid
@@ -11,7 +16,7 @@ This is a repository of my assignment submissions and project materials for [M15
 * Fourier transform (theory)
 
 
-### hw2
+## hw2
 * Convolution using replication padding
 * Edge detection (Canny Edge Detector)
   * Non-maximum suppression (@ two neighboring pixels along the gradient direction)
@@ -28,7 +33,7 @@ This is a repository of my assignment submissions and project materials for [M15
 *Detailed code explanation and result images are attached to `writeup.pdf`*
 
 
-### hw3
+## hw3
 * Camera model
 * Camera calibration
 * Homography
@@ -42,7 +47,7 @@ This is a repository of my assignment submissions and project materials for [M15
 
 *Detailed code explanation and result images are attached to `writeup.pdf`*
 
-### hw4
+## hw4
 * Epipolar geometry
 * Optical flow
 * Dominant motion estimation using Lucas-Kanade method
@@ -53,3 +58,11 @@ This is a repository of my assignment submissions and project materials for [M15
   * Use double hysteresis thresholding to identify locations where the absolute difference of pixels in the template and the warped image domain exceeds the lower threshold and is below the upper threshold
 
 *Detailed code explanation is attached to `writeup.pdf`*
+
+## hw5
+* K Nearest Neighbor
+* Naive Bayes
+  * Calculate likelihood using Gaussian density of a data point
+  * Compute posterior probability given prior and likelihood
+* Linear SVM
+* Precision-Recall Curve
