@@ -5,7 +5,7 @@ This is a repository of my assignment submissions and project materials for [M15
 
 ## Project
 ### Visual Detection of Guitar Fretboard and Subsequent Finger Position Overlay By Augmenting Computer Vision Methodologies with Deep Learning
-[Presentation slides](https://docs.google.com/presentation/d/1MarnvmWeA-f02vdsuZ9UmuCXFUcQdFh4l6AqUcq_0WE/edit?usp=sharing)
+[Presentation slides](https://docs.google.com/presentation/d/1MarnvmWeA-f02vdsuZ9UmuCXFUcQdFh4l6AqUcq_0WE/edit?usp=sharing), [Report](https://github.com/suehyunpark/CV2021F/blob/master/project/%5BCV%20Project%20Final%20Report%5D%20Visual%20Detection%20of%20Guitar%20Fretboard%20and%20Subsequent%20Finger%20Position%20Overlay%20By%20Augmenting%20Computer%20Vision%20Methodologies%20with%20Deep%20Learning.pdf)
 
 
 ## hw1
